@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import "./Navigation.css";
 
 function Navigation(props) {
     return (
-        <div>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
+        <div className="navi">
+            <Link to="/" style={{ textDecoration: 'none' }}>Home</Link>
+            <Link to="/about" style={{ textDecoration: 'none' }}>About</Link>
         </div>
     );
 }
